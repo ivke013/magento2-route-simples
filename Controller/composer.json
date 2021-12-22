@@ -1,0 +1,17 @@
+{
+  "name": "learing/routesamples",
+  "description": "Magento 2 routing system learing and testing.",
+  "type": "magento2-module",
+
+  "authors": {
+    "name": "Ivan Stojmenovic",
+    "email": "office.stojmenovic@gmail.com"
+  },
+
+  "autoload": {
+    "files": ["registration.php"],
+    "psr-4": {
+      "Learing\\RouteSamples\\": ""
+    }
+  }
+}
