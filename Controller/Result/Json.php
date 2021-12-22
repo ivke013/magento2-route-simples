@@ -8,7 +8,6 @@
 
 namespace Learing\RouteSamples\Controller\Result;
 
-
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\Result\JsonFactory;
