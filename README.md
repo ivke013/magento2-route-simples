@@ -6,3 +6,4 @@
 
 - For JSON result object: `http://localhost/route/result/json`
 - For RAW result object: `http://localhost/route/result/raw`
+- For REDIRECT result object: `http://localhost/route/result/redirect`
