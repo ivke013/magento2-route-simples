@@ -49,4 +49,5 @@ class Raw implements HttpGetActionInterface
 
         return $result;
     }
+
 }
