@@ -45,7 +45,6 @@ class Raw implements HttpGetActionInterface
     public function execute()
     {
         $result = $this->rawResult->create();
-
         $result->setContents('<strong>Hello this is RAW result object.</strong>');
 
         return $result;

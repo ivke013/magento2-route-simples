@@ -24,7 +24,7 @@ class Json implements HttpGetActionInterface
     protected $jsonResult;
 
     /**
-     * View class constructor
+     * View class constructor.
      *
      * @param JsonFactory $jsonFactory
      */
