@@ -16,4 +16,4 @@ We can call custom route from two different paths:
 
 ## Admin route
 
-- For admin route: http://localhost/<admin-url>/simpleroute/result/view
+- For admin route: `http://localhost/<admin-url>/simpleroute/result/view`
