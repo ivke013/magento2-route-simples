@@ -6,7 +6,7 @@
  * Time: 10:54
  */
 
-namespace Learing\RouteSamples\Controller\Page;
+namespace Learing\RouteSamples\Controller\Result;
 
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
@@ -17,7 +17,7 @@ use Magento\Framework\Controller\Result\JsonFactory;
  * Class View
  * @package Learing\RouteSamples\Controller\Page
  */
-class View implements HttpGetActionInterface
+class Json implements HttpGetActionInterface
 {
     /**
      * @var \Magento\Framework\Controller\Result\JsonFactory
