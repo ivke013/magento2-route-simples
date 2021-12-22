@@ -67,6 +67,15 @@ class Router implements RouterInterface
             return $this->actionFactory->create(Forward::class, ['request' => $request]);
         }
 
+        if (strpos($identifier, 'params') !== false) {
+            $request->setModuleName('route');
+            $request->setControllerName('result');
+            $request->setActionName('params');
+            $request->setPostValue(['slug']);
+
+            return $this->actionFactory->create(Forward::class, ['request' => $request]);
+        }
+
             return null;
         }
 }
