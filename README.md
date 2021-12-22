@@ -14,3 +14,6 @@ We can call custom route from two different paths:
  - First URL `route/resut/custom` is standard route method without using custom Route class.
  - Second URL path `localhost/customroute` is defined with using Router class where we define what action will be executed when specific URL parameter is called.
 
+## Admin route
+
+- For admin route: http://localhost/<admin-url>/simpleroute/result/view
