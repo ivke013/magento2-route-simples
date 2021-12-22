@@ -1,40 +1,37 @@
 <?php
 /**
- * File: Redirect.php
+ * File: Forward.php
  * User: Ivan Stojmenovic
  * Email: office.stojmenovic@gmail.com
  * Date: 22.12.21.
- * Time: 13:31
+ * Time: 15:59
  */
 
 namespace Learing\RouteSamples\Controller\Result;
 
-
-use Magento\Framework\App\ResponseInterface;
-use Magento\Framework\Controller\Result\RawFactory;
 use Magento\Framework\App\Action\HttpGetActionInterface;
-use Magento\Framework\Controller\ResultFactory;
+use Magento\Framework\App\ResponseInterface;
 
 /**
- * Class Redirect
+ * Class Forward
  *
  * @package Learing\RouteSamples\Controller\Result
  */
-class Redirect implements HttpGetActionInterface
+class Forward implements HttpGetActionInterface
 {
     /**
-     * @var \Magento\Framework\Controller\ResultFactory
+     * @var \Magento\Framework\Controller\Result\ForwardFactory
      */
     protected $resultFactory;
 
     /**
-     * Raw constructor
+     * Forward constructor
      *
-     * @param RawFactory $rawFactory
+     * @param ForwardFactory $factory
      */
-    public function __construct(ResultFactory $resultFactory)
+    public function __construct(\Magento\Framework\Controller\Result\ForwardFactory $forwardFactory)
     {
-        $this->resultFactory = $resultFactory;
+        $this->resultFactory = $forwardFactory;
     }
 
     /**
@@ -45,9 +42,9 @@ class Redirect implements HttpGetActionInterface
      */
     public function execute()
     {
-        $result = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
-
-        $result->setUrl('http://www.google.com');
+        $result = $this->resultFactory->create();
+        $result->setController('result');
+        $result->forward('raw');
 
         return $result;
     }
